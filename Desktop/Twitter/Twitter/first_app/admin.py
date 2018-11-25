@@ -5,4 +5,5 @@ from first_app.models import User, Tweet
 admin.site.register(User)
 admin.site.register(Tweet)
 
+lol
 # Register your models here.
