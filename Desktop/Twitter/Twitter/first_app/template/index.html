@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Time line</title>
+</head>
+<body>
+
+ 	<h1>Timeline</h1>
+ 	{% for tweet in tweets %}
+ 		<p>({ tweet.text })</p>
+ 		<h5>
+
+ 			<a href="{% url 'main_app:profile' user_id=tweet.user.id %}">{{tweet.user.username}}</a>
+ 			<span>- {{ tweet.date }}</span>
+
+		</h5>
+		<hr>
+
+	{% endfor %}
+
+</body>
+</html>
